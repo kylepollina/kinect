@@ -11,11 +11,6 @@ void setup() {
 
     kinect.initDepth();
     kinect.initVideo();
-  
-    PImage depth = kinect.getDepthImage();
-    graphics = createGraphics(depth.width, depth.height);
-
-    noStroke();
 }
 
 void draw() {
