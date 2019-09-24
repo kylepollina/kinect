@@ -1,13 +1,12 @@
 import org.openkinect.processing.*;
 
 Kinect kinect;
-PGraphics graphics;
 
 void setup() {
     // Kinect camera is 640x480
     size(640, 480);
+    /* fullScreen(); */
     kinect = new Kinect(this);
-    println(kinect.height);
 
     kinect.initDepth();
     kinect.initVideo();
@@ -17,8 +16,8 @@ void draw() {
     background(0);
 
     /* depth(); */
-    depthColor();
-    /* infrared(); */
+    /* depthColor(); */
+    infrared();
     /* RGB(); */
 }
 
@@ -26,7 +25,7 @@ void depth() {
     kinect.enableColorDepth(false);
     PImage depth = kinect.getDepthImage();
     int[] rawDepth = kinect.getRawDepth();
-    image(depth, 0, 0);
+    image(depth, 0, 0, width, height);
 }
 
 void depthColor() {
