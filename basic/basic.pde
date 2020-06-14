@@ -15,9 +15,9 @@ void setup() {
 void draw() {
     background(0);
 
-    /* depth(); */
+    depth();
     /* depthColor(); */
-    infrared();
+    /* infrared(); */
     /* RGB(); */
 }
 

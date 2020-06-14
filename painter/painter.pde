@@ -40,7 +40,7 @@ void depth() {
             canvas.pixels[index] = color(hue(col), saturation(col), brightness(col) - 1);
 
             if(minThreshold < depth && depth < maxThreshold) {
-                canvas.pixels[index] = color(frameCount/2 % 100, 100, 100);
+                canvas.pixels[index] = color(frameCount/2 % 100, frameCount / 5 % 100, 100);
             }
         }
     }
