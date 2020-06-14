@@ -1,0 +1,184 @@
+/* ┌────────────┐ */
+/* │ styles.css │ */
+/* └────────────┘ */
+
+@font-face {
+    font-family: "Pitch Italic";
+    src: url("fonts/Pitch Test/PitchTest-SemiboldItalic.otf");
+}
+
+@font-face {
+    font-family: "Pitch Light Italic";
+    src: url("fonts/Pitch Test/PitchTest-Light.otf");
+}
+
+:root {
+    --nav-width: 220px;
+}
+
+html {
+    overflow-y: scroll;
+    min-height: 100%;
+    margin: 0px;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    font-family: "Pitch Italic";
+    font-size: 12pt;
+}
+
+#container {
+    width: 800px;
+    margin: auto;
+}
+
+#header {
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #CE2029;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    color: rgb(255, 255, 255);
+}
+
+#main {
+    margin-top: 60px;
+}
+
+#nav {
+    position: fixed;
+    float: left;
+}
+
+#nav ul {
+    width: var(--nav-width);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    line-height: 13pt;
+}
+
+#nav a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#content {
+    float: left;
+    width: calc(100% - var(--nav-width));
+    height: 100%;
+    margin-left: var(--nav-width);
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+#posts {
+    display: block;
+    margin-left: 20px;
+}
+
+#posts a {
+    color: black;
+}
+
+#posts a:hover {
+    color: #CE2029;
+}
+
+#posts img {
+    width: 90%;
+}
+
+#posts #machine_learning a {
+    color: #CE2029;
+}
+
+#sketch #thrill-holder {
+    width: 640px;
+    margin: auto;
+}
+
+#sketch #squares-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #corners-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #arcs-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #towers-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #gogh-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #diamond-holder {
+    width: 520px;
+    margin: auto;
+}
+
+#sketch #starry-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #triangles-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #holohex-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #spiro-holder {
+    width: 600px;
+    margin: auto;
+}
+
+#sketch #lisa-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #breathing-holder {
+    width: 500px;
+    margin: auto;
+}
+
+#sketch #main-sketch-holder {
+    width: 495px;
+    margin: auto;
+}
+
+#footer {
+    text-align: center;
+}
+
